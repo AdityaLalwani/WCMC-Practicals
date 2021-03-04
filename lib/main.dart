@@ -1,9 +1,11 @@
 import 'package:custom_message/Pra_2.dart';
 import 'package:custom_message/pra_3.dart';
+import 'package:custom_message/pra_4.dart';
+import 'package:custom_message/pra_5.dart';
+import 'package:custom_message/pra_6.dart';
+import 'package:custom_message/pra_7/pra_7.dart';
 import 'package:flutter/material.dart';
 import 'package:custom_message/Pra_1.dart';
-
-import 'Pra_4.dart';
 
 void main() => runApp(MyApp());
 
@@ -102,6 +104,63 @@ class _MyHomePageState extends State<MyHomePage> {
               },
               child: Text(
                 "Practical 4",
+                style: TextStyle(fontSize: 20),
+              ),
+              color: Colors.grey[200],
+            ),
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          Container(
+            height: 80,
+            child: FlatButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Practical5()),
+                );
+              },
+              child: Text(
+                "Practical 5",
+                style: TextStyle(fontSize: 20),
+              ),
+              color: Colors.grey[200],
+            ),
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          Container(
+            height: 80,
+            child: FlatButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Practical6()),
+                );
+              },
+              child: Text(
+                "Practical 6",
+                style: TextStyle(fontSize: 20),
+              ),
+              color: Colors.grey[200],
+            ),
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          Container(
+            height: 80,
+            child: FlatButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Practical7()),
+                );
+              },
+              child: Text(
+                "Practical 7",
                 style: TextStyle(fontSize: 20),
               ),
               color: Colors.grey[200],
