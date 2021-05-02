@@ -1,6 +1,6 @@
-# custom_message
+# practical9
 
-A new Flutter project.
+A new Flutter application.
 
 ## Getting Started
 

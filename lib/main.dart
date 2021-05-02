@@ -1,13 +1,21 @@
-import 'package:custom_message/Pra_2.dart';
-import 'package:custom_message/pra_3.dart';
-import 'package:custom_message/pra_4.dart';
-import 'package:custom_message/pra_5.dart';
-import 'package:custom_message/pra_6.dart';
-import 'package:custom_message/pra_7/pra_7.dart';
 import 'package:flutter/material.dart';
-import 'package:custom_message/Pra_1.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:practical9/pra_1.dart';
+import 'package:practical9/pra_10.dart';
+import 'package:practical9/pra_3.dart';
+import 'package:practical9/pra_4.dart';
+import 'package:practical9/pra_5.dart';
+import 'package:practical9/pra_6.dart';
+import 'package:practical9/pra_7/pra_7.dart';
+import 'package:practical9/pra_8.dart';
+import 'package:practical9/pra_9/pra_9.dart';
+import 'Pra_2.dart';
 
-void main() => runApp(MyApp());
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override
@@ -161,6 +169,63 @@ class _MyHomePageState extends State<MyHomePage> {
               },
               child: Text(
                 "Practical 7",
+                style: TextStyle(fontSize: 20),
+              ),
+              color: Colors.grey[200],
+            ),
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          Container(
+            height: 80,
+            child: FlatButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Practical8()),
+                );
+              },
+              child: Text(
+                "Practical 8",
+                style: TextStyle(fontSize: 20),
+              ),
+              color: Colors.grey[200],
+            ),
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          Container(
+            height: 80,
+            child: FlatButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Practical9()),
+                );
+              },
+              child: Text(
+                "Practical 9",
+                style: TextStyle(fontSize: 20),
+              ),
+              color: Colors.grey[200],
+            ),
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          Container(
+            height: 80,
+            child: FlatButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => WeatherHome()),
+                );
+              },
+              child: Text(
+                "Practical 10",
                 style: TextStyle(fontSize: 20),
               ),
               color: Colors.grey[200],

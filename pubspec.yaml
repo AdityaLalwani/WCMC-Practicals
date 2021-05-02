@@ -1,5 +1,5 @@
-name: custom_message
-description: A new Flutter project.
+name: practical9
+description: A new Flutter application.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `pub publish`. This is preferred for private packages.
@@ -23,19 +23,19 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  intl:
-  flutter_local_notifications:
-  webview_flutter:
 
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^1.0.1
+  cupertino_icons: ^1.0.2
+  cloud_firestore: ^0.14.1+3
+  intl:
+  flutter_local_notifications:
+  webview_flutter:
+  http:
 
 dev_dependencies:
   flutter_test:
-    sdk: flutter
-  integration_test:
     sdk: flutter
 
 # For information on the generic Dart part of this file, see the

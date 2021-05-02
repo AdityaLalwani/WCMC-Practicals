@@ -1,11 +1,12 @@
-import 'package:custom_message/pra_7/card.dart';
-import 'package:custom_message/pra_7/fragment.dart';
-import 'package:custom_message/pra_7/grid.dart';
-import 'package:custom_message/pra_7/list.dart';
-import 'package:custom_message/pra_7/scroll.dart';
-import 'package:custom_message/pra_7/tabbed.dart';
-import 'package:custom_message/pra_7/webview.dart';
 import 'package:flutter/material.dart';
+import 'package:practical9/pra_7/scroll.dart';
+import 'package:practical9/pra_7/tabbed.dart';
+import 'package:practical9/pra_7/webview.dart';
+
+import 'card.dart';
+import 'fragment.dart';
+import 'grid.dart';
+import 'list.dart';
 
 class Practical7 extends StatefulWidget {
   @override
